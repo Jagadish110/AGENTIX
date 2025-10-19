@@ -40,19 +40,19 @@
 2. **Create a Virtual Environment**:
   bash
   python -m venv venv
-   # Linux/Mac �
+  **Linux/Mac �**
   source venv/bin/activate
-   # Windows 💻
+   **Windows 💻**
   venv\Scripts\activate    
 
-3.**Install Dependencies (from requirements.txt)**:
+3. **Install Dependencies (from requirements.txt)**:
   bash
   pip install -r requirements.txt
 
-4.**Set Up Environment Variables (Your Secret Sauce! 🔑)**:
+4. **Set Up Environment Variables (Your Secret Sauce! 🔑)**:
   textGROQ_API_KEY=YOUR_GROQ_KEY_HERE
   TAVILY_API_KEY=your_tavily_key_here
   QDRANT_API_KEY=your_qdrant_key_here
 
-5.**Run the Agent and Watch the Magic Unfold! ✨**:
+5. **Run the Agent and Watch the Magic Unfold! ✨**:
   bashstreamlit run streamlit_app.py
