@@ -6,9 +6,10 @@ langchain_openai
 langchain_groq
 langchain_google_genai
 langchain_anthropic
-mem0
+mem0ai==0.1.16
 qdrant-client
 letta-client
 langgraph
 requests
+
 
