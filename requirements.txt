@@ -4,18 +4,11 @@ langchain
 langchain-core
 langchain-community
 langchain-groq
-langchain-openai
-langchain-anthropic
-langchain-google-genai
 langgraph
 qdrant-client
-faiss-cpu
 tavily-python
 playwright
 huggingface-hub
 sentence-transformers
-redis
-requests
-mem0ai==0.1.16
-
-
+mem0ai==0.1.16  # Keep, but pin grpcio below
+grpcio-tools==1.66.1  # Latest with Python 3.13 wheels (post-Mar 2024); avoids source build
