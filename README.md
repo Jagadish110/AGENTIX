@@ -46,6 +46,7 @@ venv\Scripts\activate     # Windows 💻
 3.**Install Dependencies (from requirements.txt)**:
 bash
 pip install -r requirements.txt
+
 4.**Set Up Environment Variables (Your Secret Sauce! 🔑)**:
 textGROQ_API_KEY=YOUR_GROQ_KEY_HERE
 TAVILY_API_KEY=your_tavily_key_here
