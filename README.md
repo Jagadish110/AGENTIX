@@ -1,58 +1,141 @@
 # Agentix 📰✨
 
-**Agentix** is an AI-powered personal assistant that delivers the **latest news**, **web analysis**, and **general knowledge** with a dash of magic! 🚀 It harnesses **LangGraph**, **Tavily Search**, and **Mem0 long-term memory** to provide accurate, context-aware responses while remembering your entire conversation history. Built with **Streamlit** for a sleek, interactive web interface. 🌐
+[![Project](https://img.shields.io/badge/project-Agentix-6CCFF6?style=flat&logo=azurepipelines)](https://github.com/Jagadish110/AGENTIX)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Streams](https://img.shields.io/badge/frontend-Streamlit-orange.svg)](https://streamlit.io)
+
+> A colourful, friendly AI assistant that serves up the latest news, web analysis and code help — fast, concise and delightful.
 
 ---
 
-## 🚀 **Features**
-
-- **📰 News Summarization**: Pulls the hottest headlines via Tavily and crafts bite-sized, crystal-clear summaries. 📝
-- **🔍 RAG (Retrieval-Augmented Generation)**: Dive into any URL, extract insights, and serve up structured summaries that shine. 📊
-- **🎥 YouTube Video Search**: Hunt down spot-on videos tailored to your query—entertainment, tutorials, or deep dives! 🔎
-- **💻 Code Assistant**: Whip up, debug, and demystify code in Python, JavaScript, and beyond. Your coding sidekick! 🐛
-- **🧠 Contextual Memory**: Powered by **Mem0** + Qdrant, it stores and recalls long-term chat history like an elephant with a PhD. 🐘
-- **🔄 Self-Improving Summarizer**: A clever reflection node polishes responses for top-tier quality every time. 💎
-- **🛤️ Multi-Modal Routing**: Smartly steers queries to the right path—news, code, YouTube, URLs, or pure AI wisdom! 🧭
+🌟 Quick links
+- Live demo: (add your deployment URL)
+- Docs: (add docs link)
+- Issues: https://github.com/Jagadish110/AGENTIX/issues
 
 ---
 
-## 🛠️ **Tech Stack**
+## ✨ What is Agentix?
 
-| Component                  | Technology / Library          | 🎯 Why It Rocks |
-|----------------------------|-------------------------------|-----------------|
-| **Frontend**               | Streamlit                     | Effortless, interactive UIs in minutes! 🎨 |
-| **LLM & Agent**            | LangGraph, LangChain          | Builds robust AI workflows like a boss. 🤖 |
-| **Search & Retrieval**     | Tavily, WebBaseLoader         | Lightning-fast, reliable web intel. ⚡ |
-| **Memory & Embeddings**    | Mem0, HuggingFace, Qdrant     | Keeps convos fresh and unforgettable. 💾 |
-| **Chat Models**            | ChatGroq, ChatOpenAI, ChatGoogleGenerativeAI, ChatAnthropic | Power-packed LLMs for every vibe. 🗣️ |
-| **Code Assistance**        | Python, LangChain             | Code gen that's smart and sassy. 🧑‍💻 |
-| **Deployment**             | Vercel / Render / Cloud       | Serverless magic for seamless scaling. ☁️ |
+Agentix is an AI-powered personal assistant that blends Retrieval-Augmented Generation (RAG), news summarization, deep web analysis, and code assistance into one friendly agent. It routes queries smartly (news, YouTube, URLs, coding, or general knowledge) and remembers past conversations with robust memory.
 
 ---
 
-## 📦 **Installation** (Quick & Easy! ⏱️)
+## 🚀 Features
 
-1. **Clone the Repository**:
-   ''' bash
-   git clone https://github.com/Jagadish110/Agentix.git
-   cd Agentix
+- 📰 News Summarization — Fetches top headlines (Tavily) and returns crisp summaries.
+- 🔍 RAG (Retrieval-Augmented Generation) — Crawl a URL, extract structured insights, and summarize key points.
+- 🎥 YouTube Search — Find relevant videos (tutorials, deep dives) for a query.
+- 💻 Code Assistant — Generate, explain and debug code in Python, JavaScript and more.
+- 🧠 Contextual Memory — Mem0 + Qdrant powered long-term memory for consistent multi-turn chats.
+- 🔄 Self-Improving Summaries — Reflection nodes polish outputs for improved quality.
+- 🛤️ Multi-Modal Routing — Routes requests to the best pipeline automatically.
 
-2. **Create a Virtual Environment**:
-  bash
-  python -m venv venv
-  **Linux/Mac �**
-  source venv/bin/activate
-   **Windows 💻**
-  venv\Scripts\activate    
+---
 
-3. **Install Dependencies (from requirements.txt)**:
-  bash
-  pip install -r requirements.txt
+## 🧩 Tech Stack
 
-4. **Set Up Environment Variables (Your Secret Sauce! 🔑)**:
-  textGROQ_API_KEY=YOUR_GROQ_KEY_HERE
-  TAVILY_API_KEY=your_tavily_key_here
-  QDRANT_API_KEY=your_qdrant_key_here
+| Component           | Technology / Library                                           | Why it rocks |
+|--------------------:|----------------------------------------------------------------|--------------|
+| Frontend            | Streamlit                                                      | Rapid, interactive UI |
+| LLM & Orchestration | LangGraph, LangChain                                            | Composable AI workflows |
+| Search & Retrieval  | Tavily, WebBaseLoader                                           | Fast web crawling & search |
+| Memory & Embeddings | Mem0, HuggingFace, Qdrant                                       | Reliable vector memory |
+| Chat Models         | ChatGroq, OpenAI, Google GAI, Anthropic                         | Variety of model styles |
+| Code Assistant      | Python, LangChain                                               | Strong code generation & tooling |
+| Deployment          | Vercel / Render / Cloud                                         | Serverless & scalable |
 
-5. **Run the Agent and Watch the Magic Unfold! ✨**:
-  bashstreamlit run streamlit_app.py
+---
+
+## 🎨 Preview
+
+(Add screenshots or GIFs here — e.g. /docs/screenshot.png)
+
+---
+
+## 📦 Installation (Clean & Easy)
+
+1. Clone the repository
+```bash
+git clone https://github.com/Jagadish110/AGENTIX.git
+cd AGENTIX
+```
+
+2. Create and activate a virtual environment
+```bash
+python -m venv venv
+# macOS / Linux
+source venv/bin/activate
+# Windows
+venv\Scripts\activate
+```
+
+3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+4. Environment variables — copy & fill your keys
+```bash
+# macOS / Linux (bash)
+export GROQ_API_KEY="YOUR_GROQ_KEY_HERE"
+export TAVILY_API_KEY="YOUR_TAVILY_KEY_HERE"
+export QDRANT_API_KEY="YOUR_QDRANT_KEY_HERE"
+
+# Windows (PowerShell)
+$env:GROQ_API_KEY="YOUR_GROQ_KEY_HERE"
+$env:TAVILY_API_KEY="YOUR_TAVILY_KEY_HERE"
+$env:QDRANT_API_KEY="YOUR_QDRANT_KEY_HERE"
+```
+
+5. Run the app (Streamlit)
+```bash
+streamlit run streamlit_app.py
+```
+
+---
+
+## 🧪 Usage examples
+
+- Summarize a news page: paste a news URL in the "URL Analysis" tab and hit Summarize.
+- Ask for code help: start a conversation and attach a snippet — Agentix will explain, refactor or debug.
+- Search YouTube: choose "YouTube" mode and enter a topic to receive curated video results.
+
+---
+
+## 🛠️ Development Tips
+
+- Add new models or connectors in the `agents/` or `nodes/` folder (where orchestration nodes live).
+- Use the included `.env.example` as a template for required keys.
+- Run tests (if present) via:
+```bash
+pytest
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please:
+1. Fork the repo
+2. Create a feature branch
+3. Open a PR with a clear description
+
+See CONTRIBUTING.md for more details (add this file if you want a contributor guide).
+
+---
+
+## 🔗 Links & Contact
+
+- Repository: https://github.com/Jagadish110/AGENTIX
+- Report issues: https://github.com/Jagadish110/AGENTIX/issues
+- Author: Jagadish110 — feel free to open PRs or contact via GitHub
+
+---
+
+Thanks for using Agentix — let me know if you'd like me to:
+1. Add real screenshots or a demo GIF,
+2. Generate a CONTRIBUTING.md and CODE_OF_CONDUCT,
+3. Include CI/Badges (build/test coverage),
+or I can push these changes directly as a PR.
