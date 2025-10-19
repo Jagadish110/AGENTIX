@@ -1,15 +1,21 @@
 streamlit
 python-dotenv
 langchain
-langchain_community
-langchain_openai
-langchain_groq
-langchain_google_genai
-langchain_anthropic
-mem0ai==0.1.16
-qdrant-client
-letta-client
+langchain-core
+langchain-community
+langchain-groq
+langchain-openai
+langchain-anthropic
+langchain-google-genai
 langgraph
+qdrant-client
+faiss-cpu
+tavily-python
+playwright
+huggingface-hub
+sentence-transformers
+redis
 requests
+mem0ai==0.1.16
 
 
