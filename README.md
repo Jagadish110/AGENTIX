@@ -11,55 +11,14 @@ Agentix is an AI-powered personal assistant that delivers the latest news, web a
 🔄 Self-Improving Summarizer: A clever reflection node polishes responses for top-tier quality every time. 💎
 🛤️ Multi-Modal Routing: Smartly steers queries to the right path—news, code, YouTube, URLs, or pure AI wisdom! 🧭
 
-
-🛠️ Tech Stack
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ComponentTechnology / Library🎯 Why It RocksFrontendStreamlitEffortless, interactive UIs in minutes! 🎨LLM & AgentLangGraph, LangChainBuilds robust AI workflows like a boss. 🤖Search & RetrievalTavily, WebBaseLoaderLightning-fast, reliable web intel. ⚡Memory & EmbeddingsMem0, HuggingFace, QdrantKeeps convos fresh and unforgettable. 💾Chat ModelsChatGroq, ChatOpenAI, ChatGoogleGenerativeAI, ChatAnthropicPower-packed LLMs for every vibe. 🗣️Code AssistancePython, LangChainCode gen that's smart and sassy. 🧑‍💻DeploymentVercel / Render / CloudServerless magic for seamless scaling. ☁️
-
+Component,Technology / Library,🎯 Why It Rocks
+Frontend,Streamlit,"Effortless, interactive UIs in minutes! 🎨"
+LLM & Agent,"LangGraph, LangChain",Builds robust AI workflows like a boss. 🤖
+Search & Retrieval,"Tavily, WebBaseLoader","Lightning-fast, reliable web intel. ⚡"
+Memory & Embeddings,"Mem0, HuggingFace, Qdrant",Keeps convos fresh and unforgettable. 💾
+Chat Models,"ChatGroq, ChatOpenAI, ChatGoogleGenerativeAI, ChatAnthropic",Power-packed LLMs for every vibe. 🗣️
+Code Assistance,"Python, LangChain",Code gen that's smart and sassy. 🧑‍💻
+Deployment,Vercel / Render / Cloud,Serverless magic for seamless scaling. ☁️
 📦 Installation (Quick & Easy! ⏱️)
 
 Clone the Repository:
