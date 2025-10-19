@@ -33,7 +33,7 @@
 ## 📦 **Installation** (Quick & Easy! ⏱️)
 
 1. **Clone the Repository**:
-   bash
+   ''' bash
    git clone https://github.com/Jagadish110/Agentix.git
    cd Agentix
 
