@@ -40,8 +40,10 @@
 2. **Create a Virtual Environment**:
   bash
   python -m venv venv
-  source venv/bin/activate  # Linux/Mac 🐧
-  venv\Scripts\activate     # Windows 💻
+   # Linux/Mac �
+  source venv/bin/activate
+   # Windows 💻
+  venv\Scripts\activate    
 
 3.**Install Dependencies (from requirements.txt)**:
   bash
