@@ -1,7 +1,6 @@
 # Agentix 📰✨
 
 [![Project](https://img.shields.io/badge/project-Agentix-6CCFF6?style=flat&logo=azurepipelines)](https://github.com/Jagadish110/AGENTIX)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Streams](https://img.shields.io/badge/frontend-Streamlit-orange.svg)](https://streamlit.io)
 
