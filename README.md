@@ -38,19 +38,19 @@
    cd Agentix
 
 2. **Create a Virtual Environment**:
-bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac 🐧
-venv\Scripts\activate     # Windows 💻
+  bash
+  python -m venv venv
+  source venv/bin/activate  # Linux/Mac 🐧
+  venv\Scripts\activate     # Windows 💻
 
 3.**Install Dependencies (from requirements.txt)**:
-bash
-pip install -r requirements.txt
+  bash
+  pip install -r requirements.txt
 
 4.**Set Up Environment Variables (Your Secret Sauce! 🔑)**:
-textGROQ_API_KEY=YOUR_GROQ_KEY_HERE
-TAVILY_API_KEY=your_tavily_key_here
-QDRANT_API_KEY=your_qdrant_key_here
+  textGROQ_API_KEY=YOUR_GROQ_KEY_HERE
+  TAVILY_API_KEY=your_tavily_key_here
+  QDRANT_API_KEY=your_qdrant_key_here
 
 5.**Run the Agent and Watch the Magic Unfold! ✨**:
-bashstreamlit run streamlit_app.py
+  bashstreamlit run streamlit_app.py
