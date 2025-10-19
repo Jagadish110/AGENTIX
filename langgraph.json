@@ -1,14 +1,15 @@
 {
   "builds": [
     {
-      "src": "newsagentlangserve.py",
+      "src": "streamlit_newsagentlangserve.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "newsagentlangserve.py"
+      "dest": "streamlit_newsagentlangserve.py"
     }
   ]
 }
+
