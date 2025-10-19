@@ -10,5 +10,5 @@ tavily-python
 playwright
 huggingface-hub
 sentence-transformers
-mem0ai==0.1.16  # Keep, but pin grpcio below
-grpcio-tools==1.66.1  # Latest with Python 3.13 wheels (post-Mar 2024); avoids source build
+mem0ai==0.1.16
+grpcio-tools==1.75.1  # Latest with cp313 wheels; avoids auto-upgrade to broken ver
