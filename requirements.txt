@@ -1,11 +1,11 @@
 streamlit
 python-dotenv
-langchain==0.3.21
-langchain-core==0.3.21
-langchain-community==0.3.21
+langchain==0.3.27
+langchain-core==0.3.27
+langchain-community==0.3.31
 langchain-groq==0.3.3
-langchain-tavily==0.3.0
-langgraph==0.3.21
+langchain-tavily==0.2.12
+langgraph==0.3.27
 qdrant-client
 tavily-python
 playwright
