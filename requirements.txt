@@ -1,16 +1,16 @@
 streamlit
 python-dotenv
-langchain
-langchain_tavily
-langchain-core
-langchain-community
-langchain-groq
-langgraph
+langchain==1.0.0
+langchain-core==1.0.0
+langchain-community==1.0.0
+langchain-groq==1.0.0
+langchain-tavily==0.2.12  # Add this (your code needs it; replaces tavily-python if unused)
+langgraph==1.0.0
 qdrant-client
-tavily-python
+tavily-python  # Keep if using core client; optional
 playwright
 huggingface-hub
 sentence-transformers
-mem0ai==0.1.16
-grpcio-tools==1.75.1  # Latest with cp313 wheels; avoids auto-upgrade to broken ver
+mem0ai==1.0.0  # Update to latest (no LangChain conflicts)
+grpcio-tools==1.75.1
 
