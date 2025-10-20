@@ -2,11 +2,9 @@ services:
   - type: web
     name: agentix
     env: python
-    buildCommand: apt-get update && apt-get install -y build-essential pkg-config libprotobuf-dev protobuf-compiler && pip install --upgrade pip setuptools wheel && pip install -r requirements.txt
-    startCommand: streamlit run newsagentlangserve.py --server.port $PORT --server.address 0.0.0.0
+    buildCommand: pip install --upgrade pip setuptools wheel && pip install -r requirements.txt
+    startCommand: streamlit run newsagentlangserve.py --server.port $PORT --server.headless true --server.address 0.0.0.0
     plan: free
     envVars:
       - key: PYTHON_VERSION
-        value: "3.12.7"  # Stable with full wheel support; avoids 3.13 grpcio quirks
-
-
+        value: "3.12.7"
