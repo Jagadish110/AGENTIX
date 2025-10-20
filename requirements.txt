@@ -1,6 +1,7 @@
 streamlit
 python-dotenv
 langchain
+langchain_tavily
 langchain-core
 langchain-community
 langchain-groq
@@ -12,3 +13,4 @@ huggingface-hub
 sentence-transformers
 mem0ai==0.1.16
 grpcio-tools==1.75.1  # Latest with cp313 wheels; avoids auto-upgrade to broken ver
+
