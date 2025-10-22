@@ -6,7 +6,7 @@ from langchain_groq import ChatGroq
 from langchain_tavily import TavilySearch
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_community.document_loaders import PlaywrightURLLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain.prompts import ChatPromptTemplate, AIMessagePromptTemplate
@@ -627,3 +627,4 @@ if prompt := st.chat_input("💬 Ask about latest news, a URL, or anything else.
                 "question": prompt,
                 "answer": response
             })
+
