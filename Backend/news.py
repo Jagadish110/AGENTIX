@@ -6,10 +6,10 @@ from langchain_groq import ChatGroq
 from langchain_tavily import TavilySearch
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_community.document_loaders import PlaywrightURLLoader
+from langchain_core.prompts import ChatPromptTemplate, AIMessagePromptTemplate
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain.prompts import ChatPromptTemplate, AIMessagePromptTemplate
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_retrieval_chain
 from langchain_core.messages import SystemMessage, HumanMessage
