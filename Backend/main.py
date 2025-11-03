@@ -3,7 +3,7 @@ import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from news import run_agent  # <-- will work after requirements fix
+from news import run_agent
 
 app = FastAPI(title="Agentix Backend")
 
@@ -18,9 +18,14 @@ class QueryRequest(BaseModel):
     question: str
     user_id: str = "default_user"
 
-@app.get("/")   def root():   return {"message": "Agentix Backend is running!"}
-@app.get("/health") def health(): return {"status": "ok"}
+@app.get("/")
+def root():
+    return {"message": "Agentix Backend is running!"}
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
 
 @app.post("/ask")
-def ask_agent(request: QueryRequest):
+def ask_agent_endpoint(request: QueryRequest):
     return run_agent(request.question, request.user_id)
