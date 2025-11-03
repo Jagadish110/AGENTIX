@@ -1,0 +1,16 @@
+streamlit
+python-dotenv
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langchain-tavily
+langgraph
+qdrant-client
+tavily-python
+playwright
+huggingface-hub
+sentence-transformers
+mem0ai
+grpcio-tools
+
