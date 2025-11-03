@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: fastapi-backend
+    name: agentix-backend
     env: python
-    region: oregon  # Optional: closest to you for faster deploys
     plan: free
     autoDeploy: true
+    region: oregon
 
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn Backend.main:app --host 0.0.0.0 --port $PORT  # <-- Matches your folder structure
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
