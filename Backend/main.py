@@ -1,9 +1,9 @@
-# Backend/main.py
+# main.py
 import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from news import run_agent  # <-- This will now succeed after requirements fix
+from news import run_agent  # <-- will work after requirements fix
 
 app = FastAPI(title="Agentix Backend")
 
@@ -18,20 +18,9 @@ class QueryRequest(BaseModel):
     question: str
     user_id: str = "default_user"
 
-@app.get("/")
-def root():
-    return {"message": "Agentix Backend is running!"}
-
-@app.get("/health")
-def health():
-    return {"status": "ok"}
+@app.get("/")   def root():   return {"message": "Agentix Backend is running!"}
+@app.get("/health") def health(): return {"status": "ok"}
 
 @app.post("/ask")
 def ask_agent(request: QueryRequest):
     return run_agent(request.question, request.user_id)
-
-# Render-ready entrypoint (optional; uvicorn command will use this)
-if __name__ == "__main__":
-    import uvicorn
-    port = int(os.getenv("PORT", 8000))
-    uvicorn.run("main:app", host="0.0.0.0", port=port, log_level="info")
